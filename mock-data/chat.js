@@ -1,0 +1,58 @@
+export const mockChats = [
+  {
+    id: 'CH001',
+    customer: { name: 'Anna Fischer', email: 'anna.f@webshop.eu', avatar: null },
+    status: 'active',
+    startedAt: '2026-06-04T09:01:00Z',
+    lastMessage: 'Still not working after clearing cache…',
+    unread: 2,
+    aiAssisted: true,
+    messages: [
+      { id: 'm1', role: 'customer', content: 'Hi! My dashboard is not loading.', createdAt: '2026-06-04T09:01:00Z' },
+      { id: 'm2', role: 'ai', content: 'Hello Anna! I\'m SupportAI. I can see your account is on the Pro plan. Dashboard loading issues are often caused by browser cache. Could you try a hard refresh (Ctrl+Shift+R)?', createdAt: '2026-06-04T09:01:30Z', isAI: true },
+      { id: 'm3', role: 'customer', content: 'Still not working after clearing cache…', createdAt: '2026-06-04T09:04:00Z' },
+    ],
+  },
+  {
+    id: 'CH002',
+    customer: { name: 'Liam O\'Brien', email: 'l.obrien@fintech.ie', avatar: null },
+    status: 'active',
+    startedAt: '2026-06-04T08:48:00Z',
+    lastMessage: 'Can I change my billing cycle?',
+    unread: 0,
+    aiAssisted: true,
+    messages: [
+      { id: 'm1', role: 'customer', content: 'Can I change my billing cycle from monthly to annual?', createdAt: '2026-06-04T08:48:00Z' },
+      { id: 'm2', role: 'ai', content: 'Hi Liam! Absolutely. You can switch to annual billing from Settings → Billing → Change Plan. Annual billing gives you 2 months free. Would you like me to walk you through the steps?', createdAt: '2026-06-04T08:48:45Z', isAI: true },
+      { id: 'm3', role: 'customer', content: 'Yes please!', createdAt: '2026-06-04T08:50:00Z' },
+      { id: 'm4', role: 'ai', content: 'Great! Step 1: Click your profile icon in the top right. Step 2: Go to Settings. Step 3: Click "Billing". Step 4: Under your current plan, select "Switch to Annual". The prorated difference will be credited to your next invoice.', createdAt: '2026-06-04T08:50:30Z', isAI: true },
+    ],
+  },
+  {
+    id: 'CH003',
+    customer: { name: 'Mei Zhang', email: 'mei.z@logistics.cn', avatar: null },
+    status: 'waiting',
+    startedAt: '2026-06-04T08:22:00Z',
+    lastMessage: 'I need to speak with a human agent.',
+    unread: 1,
+    aiAssisted: false,
+    messages: [
+      { id: 'm1', role: 'customer', content: 'I need to speak with a human agent.', createdAt: '2026-06-04T08:22:00Z' },
+      { id: 'm2', role: 'system', content: 'Transferring to available agent…', createdAt: '2026-06-04T08:22:15Z' },
+    ],
+  },
+  {
+    id: 'CH004',
+    customer: { name: 'Carlos Mendoza', email: 'c.mendoza@agency.mx', avatar: null },
+    status: 'ended',
+    startedAt: '2026-06-04T07:10:00Z',
+    lastMessage: 'Thanks, issue resolved!',
+    unread: 0,
+    aiAssisted: true,
+    messages: [
+      { id: 'm1', role: 'customer', content: 'My API key stopped working.', createdAt: '2026-06-04T07:10:00Z' },
+      { id: 'm2', role: 'ai', content: 'Hi Carlos! API keys can expire or be revoked. Let me check your account… Your previous key was rotated during our security update on June 2. Please generate a new key from API Settings.', createdAt: '2026-06-04T07:10:40Z', isAI: true },
+      { id: 'm3', role: 'customer', content: 'Thanks, issue resolved!', createdAt: '2026-06-04T07:15:00Z' },
+    ],
+  },
+]
